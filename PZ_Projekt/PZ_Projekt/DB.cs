@@ -1,8 +1,8 @@
 ﻿using System;
-using System.Text;
-using System.Windows;
 using System.Data.SqlClient;
 using System.Security.Cryptography;
+using System.Text;
+using System.Windows;
 
 namespace PZ_Projekt
 {
@@ -13,7 +13,7 @@ namespace PZ_Projekt
         {
 
             SqlConnection con = null;
-            
+
             string strCon = "Data Source=DESKTOP-NL1D0PO\\SQLEXPRESS;Initial Catalog=PZ_Projekt;User ID=PZ_Projekt;Password=Start123";
             try
             {

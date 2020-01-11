@@ -13,14 +13,14 @@ namespace PZ_Projekt
     {
 
         private string UserId { get; set; }
- 
+
 
         public Profil(string userid)
         {
             InitializeComponent();
             this.UserId = userid;
             this.FillupForm();
-            
+
         }
 
         private void GetUser()
@@ -113,10 +113,10 @@ namespace PZ_Projekt
                     }
                     else
                     {
-                        query = "UPDATE PZUsers SET email = '" + email + "', imie = '" + firstname + "', nazwisko = '" + lastname + "' WHERE userid = '"+ this.UserId+"'";
+                        query = "UPDATE PZUsers SET email = '" + email + "', imie = '" + firstname + "', nazwisko = '" + lastname + "' WHERE userid = '" + this.UserId + "'";
                     }
 
-                        
+
                     errormessage.Text = "";
 
                     try

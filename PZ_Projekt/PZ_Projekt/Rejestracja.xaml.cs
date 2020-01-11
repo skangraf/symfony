@@ -1,8 +1,8 @@
-﻿using System.Windows;
-using System.Windows.Input;
-using System.Data;
+﻿using System.Data;
 using System.Data.SqlClient;
 using System.Text.RegularExpressions;
+using System.Windows;
+using System.Windows.Input;
 
 
 namespace PZ_Projekt
@@ -83,7 +83,7 @@ namespace PZ_Projekt
 
                     try
                     {
-                        
+
                         SqlConnection con = DB.GetConnection();
 
 
@@ -103,13 +103,13 @@ namespace PZ_Projekt
                     catch (SqlException ex)
                     {
                         for (int i = 0; i < ex.Errors.Count; i++)
-                            {
-                                MessageBox.Show("Index #" + i + "\n" +
-                                    "Message: " + ex.Errors[i].Message + "\n" +
-                                    "LineNumber: " + ex.Errors[i].LineNumber + "\n" +
-                                    "Source: " + ex.Errors[i].Source + "\n" +
-                                    "Procedure: " + ex.Errors[i].Procedure + "\n");
-                            }
+                        {
+                            MessageBox.Show("Index #" + i + "\n" +
+                                "Message: " + ex.Errors[i].Message + "\n" +
+                                "LineNumber: " + ex.Errors[i].LineNumber + "\n" +
+                                "Source: " + ex.Errors[i].Source + "\n" +
+                                "Procedure: " + ex.Errors[i].Procedure + "\n");
+                        }
 
                     }
 

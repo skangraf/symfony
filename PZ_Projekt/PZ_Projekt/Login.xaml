@@ -10,7 +10,7 @@
     <Grid Background="#FFECECEC" Height="270" VerticalAlignment="Top" HorizontalAlignment="Center" Width="500" Margin="0,0,0,0">
         <TextBlock Height="50" HorizontalAlignment="Left" Margin="29,203,0,0" x:Name="textBlockHeading" VerticalAlignment="Top" Width="105" Foreground="#FF7D83FF">
                       <TextBlock>  
-                 <Hyperlink Click="RejestracjaAction" FontSize="14" FontWeight="Bold" FontStyle="Italic" >Zarejestruj się</Hyperlink>  
+                 <Hyperlink Click="RejestracjaAction" FontSize="14" FontWeight="Bold" FontStyle="Italic" >Zarejestruj sięę</Hyperlink>  
             </TextBlock>  
         </TextBlock>
 

@@ -1,7 +1,7 @@
-﻿using System.Windows;
-using System.Data;
+﻿using System.Data;
 using System.Data.SqlClient;
 using System.Text.RegularExpressions;
+using System.Windows;
 
 
 namespace PZ_Projekt
@@ -18,7 +18,7 @@ namespace PZ_Projekt
 
         }
 
-        Rejestracja Rejestracja= new Rejestracja();
+        Rejestracja Rejestracja = new Rejestracja();
 
         private void RejestracjaAction(object sender, RoutedEventArgs e)
         {
@@ -47,7 +47,7 @@ namespace PZ_Projekt
             }
             else
             {
-                
+
                 string email = textBoxEmail.Text;
                 string password = passwordBox1.Password;
                 password = DB.HasloDoBase64(password);
@@ -92,7 +92,7 @@ namespace PZ_Projekt
 
                 }
 
-                    
+
             }
         }
 
