@@ -1,0 +1,9 @@
+DB.cs Linia 17
+
+Data Source=DESKTOP-NL1D0PO\\SQLEXPRESS
+
+Initial Catalog=PZ_Projekt
+
+User ID=PZ_Projekt
+
+Password=Start123

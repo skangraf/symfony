@@ -1,0 +1,32 @@
+﻿<Window x:Class="PZ_Projekt.Zalogowany"
+        Icon="favicon.ico"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PZ_Projekt"
+        mc:Ignorable="d"
+        Title="Zalogowany"
+        WindowStartupLocation="CenterScreen" 
+        WindowState="Maximized"
+        MinWidth="450">
+
+
+
+    <Grid Background="#FFECECEC" >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="15*"  />
+            <RowDefinition Height="150*" />
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="101*" />
+        </Grid.ColumnDefinitions>
+
+        <Button Content="Wyloguj" HorizontalAlignment="Right" Margin="0,25,30,0" VerticalAlignment="Top" Width="80" Height="25" Click="WylogujAction" Grid.Column="1" IsCancel="true"/>
+        <Button Content="Profil" HorizontalAlignment="Right" Margin="0,25,135,0" VerticalAlignment="Top" Width="80" Height="25" Click="EdytujAction" Grid.Column="1" IsDefault="true"/>
+        <StackPanel HorizontalAlignment="Stretch" Margin="20,0,20,20" VerticalAlignment="Stretch" Grid.Row="2" Background="#FFFDFDFD">
+            <TextBlock TextWrapping="Wrap" Text="Jakaś Treść dla zalogowanych" HorizontalAlignment="Center" VerticalAlignment="Stretch" Height="Auto" Width="Auto" FontSize="20" FontStyle="Italic" FontWeight="Bold" Margin="10,0,10,0"/>
+        </StackPanel>
+    </Grid>
+</Window>
